@@ -276,7 +276,7 @@ main{
   min-width: 100%;
   /* max-width: 100%; */
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   min-height: calc(100vh - 100px);
   /* max-height: calc(100vh - 100px); */
