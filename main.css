@@ -278,7 +278,7 @@ main{
   position: fixed;
   top: 0;
   left: 0;
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   /* max-height: calc(100vh - 100px); */
   color: rgba(0, 0, 255, 1);
   filter: blur(2px) brightness(70%);
