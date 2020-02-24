@@ -1,0 +1,293 @@
+/* CSS reset script */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 
+font-family: 'Montserrat', ;
+font-family: 'Playfair Display', ;
+font-family: 'Saira Semi Condensed', ; */
+
+
+
+
+*{
+    text-decoration: none;
+    list-style: none;
+    color: #eee;
+    /* margin: 1rem auto; */
+}
+
+h1{
+    font-size: 1.9rem;
+    line-height: 1.4;
+    margin-top: 7px;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  
+  
+  .main-nav{
+    background-color: rgba(50, 50, 50, 0.7555);
+    height: 100px;
+    backdrop-filter: blur(3px);
+
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+
+  .main-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 1.8;
+  }
+
+  .main-nav ul li{
+    /* margin: auto 0.5rem; */
+    font-size: 1.4rem;
+}
+
+.main-nav ul li a{
+  /* padding: 1% 8%; */
+  font-size: 90%;
+  /* border: solid 1px #eee; */
+}
+.main-nav ul li a:after{
+  display: block;
+  border-bottom: 3px solid #eee;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+  transform-origin: 0% 50%;
+}
+.main-nav ul li a:after:hover{
+  transform: scaleX(1);
+}
+
+
+/* The Overlay (background) */
+.overlay {
+  backdrop-filter: blur(2px);
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgba(30, 30, 30, 0.7555);
+  overflow: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    display: none;
+    /* align-items: center; */
+    /* vertical-align: auto; */
+    
+    top: 30%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; 
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s;
+    /* transform: translate(40px, 0); */
+    /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20%;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+#mySearch{
+  background: #444;
+  width: 50%;
+  border: 1px solid #222;
+  padding: 0.5rem 0.9rem;
+  margin: 1rem auto;
+}
+
+h2{
+  font-size: 2rem;
+  margin: 1rem 0;
+  
+}
+
+.overlay-elements p{
+  word-spacing: 0.2rem;
+  line-height: 1.3rem;
+  font-size: 1.1rem;
+}
+
+main{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) , url('webText.jpg') ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* -webkit-backdrop-filter: blur(3px); */
+  height: calc(100vh - 100px);
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* vertical-align: middle; */
+  align-self: center;
+  justify-content: center;
+  text-align: left;
+  
+  
+}
+
+.name{
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 2px 1.5px #222;
+  margin: 0 auto 0.4rem 0; 
+  font-family: 'Heebo', cursive; 
+  /* font-weight: 500; */
+  font-weight: 600;
+  line-height: 1.9rem;
+}
+
+.description{
+  font-size: 100%;
+  font-weight: 200;
+  line-height: 1rem;
+  /* color: #222; */
+  margin: 0 auto 0.5rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.mainBanner{
+  transform: translate(-2.5rem, 5rem);
+  /* padding: 10px 30px; */
+  /* backdrop-filter: blur(3px); */
+}
+
+.fab, .far{
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 0 10px 0 0;
+  /* width: 0.7rem; */
+
+  /* margin: 0 0.1rem 0 0.1rem; */
+}
+
+.fab:hover, .far:hover{
+  opacity: 0.7;
+}
+.fa-github{
+  background-color: #222;
+  color: #eee;
+}
+
+.fa-envelope{
+  color: #DD4638;
+  background-color: #ddd;
+
+}
+
+.fa-linkedin{ 
+  color: #eee;
+  background-color: #0E76A8;
+}
+
+#bgVideo{
+  min-width: 100%;
+  /* max-width: 100%; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  min-height: calc(100vh - 100px);
+  /* max-height: calc(100vh - 100px); */
+  color: rgba(0, 0, 255, 1);
+  filter: blur(2px);
+  z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }

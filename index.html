@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/ffac8fc367.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Roboto|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main-nav">
+        <h1>Portfolio</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a onclick="openNav()" href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+        <video id="bgVideo" muted autoplay loop src="video1.mp4"></video>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <input type="text" id="mySearch" onkeyup="mySearch()" placeholder="Search for a project..." title="Type in a category">
+          <div class="overlay-elements">
+              <h2>HFG</h2>
+              <p>A simple yet elegant website for <br> 
+                  NISB's Hardware Focus Group</p>
+          </div>
+        </div>
+      
+      </div>
+      <main>
+          <div class="mainBanner">
+              <div class="name">Shreesh<br>Kulkarni</div>
+              <p class="description">Technocrat,<br>Frontend Web Developer<br>Amatuer Photographer.</p>
+              <div class="socialNav">
+                <a href="#" class="fab fa-github"></a>
+                <a href="#" class="far fa-envelope"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+              </div>
+          </div>
+      </main>
+      <script src="main.js"></script>
+</body>
+</html>
