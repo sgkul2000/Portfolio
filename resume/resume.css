@@ -196,6 +196,15 @@ line-height: 1.3rem;
 font-size: 1.1rem;
 }
 
+.hfg{
+  font-family: 'Odibee Sans';
+  font-size: 2.5rem;
+
+}
+.overlay-elements p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .bg{
   position: fixed;
   top: 0;
@@ -223,7 +232,7 @@ font-size: 1.1rem;
 
 #res{
     width: 100%;
-    margin: -54px auto 0 auto;
+    margin: 100px auto 0 auto;
 }
 #downloadLink{
   margin-top: 1rem;
@@ -290,7 +299,9 @@ font-size: 1.1rem;
   .main-nav{
     height: 50px
   }
-
+  main{
+    text-align: center;
+  }
   h1{
     float: left;
     line-height: 1;
@@ -313,8 +324,8 @@ font-size: 1.1rem;
   #res{
     width: 50%;
     position: relative;
-    left: 30%;
-    margin-top: -10%;
+    /* left: 30%; */
+    margin-top: 50px;
   }
   #downloadLink{
     margin: 25px auto 100px auto;

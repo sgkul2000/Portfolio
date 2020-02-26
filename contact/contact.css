@@ -1,0 +1,422 @@
+/* CSS reset script */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+*{
+    text-decoration: none;
+    list-style: none;
+    color: #eee;
+    /* margin: 1rem auto; */
+  }
+  
+  h1{
+    font-size: 1.9rem;
+    line-height: 1.4;
+    margin-top: 7px;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  
+  
+  .main-nav{
+    background-color: rgba(50, 50, 50, 0.7555);
+    height: 100px;
+    backdrop-filter: blur(3px);
+    /* backdrop-filter: brightness(0%); */
+  
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .main-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 1.8;
+  }
+  
+  .main-nav ul li{
+    /* margin: auto 0.5rem; */
+    font-size: 1.4rem;
+  }
+  
+  .main-nav ul li a{
+  /* padding: 1% 8%; */
+  font-size: 70%;
+  font-family: 'Heebo';
+  text-transform: uppercase;
+  /* border: solid 1px #eee; */
+  }
+  
+  
+  
+  .main-nav ul li a:after{
+  display: block;
+  content: '';
+  border-bottom: 3px solid #eee;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  /* transform-origin: 0% 50%; */
+  padding: 0 2rem;
+  }
+  .main-nav ul li a:before{
+  content: '';
+  }
+  
+  .main-nav ul li a:hover::after{
+  transform: scaleX(1);
+  }
+  .main-nav ul li a:after:hover{
+  transform: scaleX(1);
+  }
+  
+  
+  
+  
+  
+  
+  
+  .overlay {
+  backdrop-filter: blur(2px) brightness(70%);
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgba(30, 30, 30, 0.7555);
+  overflow: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+      position: relative;
+      display: none;
+      /* align-items: center; */
+      /* vertical-align: auto; */
+      
+      top: 30%; /* 25% from the top */
+      width: 100%; /* 100% width */
+      text-align: center; /* Centered text/links */
+      margin-top: 30px; 
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s;
+      /* transform: translate(40px, 0); */
+      /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+      position: absolute;
+      top: 20%;
+      right: 45px;
+      font-size: 60px;
+  }
+  
+  #mySearch{
+  background: #444;
+  width: 50%;
+  border: 1px solid #222;
+  padding: 0.5rem 0.9rem;
+  margin: 1rem auto;
+  }
+  
+  h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+    
+  }
+  
+  .overlay-elements p{
+  word-spacing: 0.2rem;
+  line-height: 1.3rem;
+  font-size: 1.1rem;
+  }
+  
+
+  .hfg{
+    font-family: 'Odibee Sans';
+    font-size: 2.5rem;
+  
+  }
+  .overlay-elements p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  .bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: blur(2px) brightness(80%);
+    background: url('../video1.jpeg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* -webkit-backdrop-filter: blur(3px); */
+    height: 100vh;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  /* .main{
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  
+  } */
+main{
+  color: #222;
+}
+.wrapper{
+  margin: 100px auto 20px auto;
+  backdrop-filter: blur(3px) grayscale(0.5);
+  background-color: rgba(230 , 230 , 230 , 0.8);
+  text-align: center;
+  color: #222;
+
+}
+
+.profileImg img{
+  width: 80px;
+  height: 80px;
+  padding: -10px -300px -10px -30px;
+  border-radius: 70%;
+  margin: 20px auto 10px auto;
+}
+
+#heading{
+  font-family: 'Roboto';
+  color: #222;
+  font-size: 2rem;
+  padding: 20px auto 0 auto;
+}
+
+#name{
+  color: #333;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  /* text-shadow: 2px 1.5px #eee; */
+  font-weight: 600;
+  font-family: 'Heebo', cursive;
+}
+
+.contactElements{
+  color: #222;
+  text-align: center;
+  /* margin: 20px 15%; */
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#socializeHeading{
+  font-size: 1.7rem;
+  color: #222;
+   font-family: 'Roboto';
+   margin: 20px auto;
+}
+
+.fab, .far{
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  /* padding: 7px auto 7px auto; */
+  /* width: 0.7rem; */
+
+  /* margin: 0 0.1rem 0 0.1rem; */
+}
+
+.fa-github{
+  background-color: #222;
+  color: #eee;
+  border-radius: 50%;
+}
+
+.fa-envelope{
+  color: #DD4638;
+  background-color: #fff;
+  border-radius: 50%;
+
+}
+
+.fa-linkedin{ 
+  color: #eee;
+  border-radius: 50%;
+
+  background-color: #0E76A8;
+}
+
+.fa-instagram{
+  /* background-color: #3f729b; */
+  color: #eee;
+  border-radius: 50%;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+
+}
+
+button{
+  color: #222;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0);
+  padding: 5px 20px;
+  margin: 5px auto;
+  
+}
+button b{
+  color: #222;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width: 960px) {
+    
+    
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15%;
+      right: 10%;
+    }
+    
+    .main-nav{
+      height: 50px
+    }
+    main{
+      text-align: center;
+    }
+    h1{
+      float: left;
+      line-height: 1;
+      margin-left: 10%;
+      border-right: solid 2px #eee;
+      padding: 2.5px 5%;
+    }
+    .main-nav ul{
+      margin: auto 10% auto 10%;
+      line-height: 2.05;
+    }
+  
+    .main-nav ul li a:after{
+      padding:0 3rem;
+    }
+    #mySearch{
+      width: 30%;
+    }
+    .fab:hover, .far:hover{
+      opacity: 0.7;
+    }
+    
+    
+  }
+  

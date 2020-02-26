@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Contact</title>
+    <script src="https://kit.fontawesome.com/ffac8fc367.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Odibee+Sans|Roboto|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="main-nav">
+        <h1>Portfolio</h1>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../resume/resume.html">Resume</a></li>
+            <li><a onclick="openNav()" href="#">Projects</a></li>
+            <li><a class="current" href="#">Contact</a></li>
+        </ul>
+
+    </div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <input type="text" id="mySearch" onkeyup="mySearch()" placeholder="Search for a project..." title="Type in a category">
+          <div class="overlay-elements">
+              <h2 class="hfg">HFG</h2>
+              <p>A simple yet elegant website for <br> 
+                  NISB's Hardware Focus Group</p>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="bg"></div>
+      <main>
+        <div class="wrapper">
+            <div id="heading">Contact Info:</div>
+            <div class="profileImg"><img src="profilePhoto Cropped.jpg" alt="profilePhoto"></div>
+            <div id="name">Shreesh Kulkarni</div>
+            <div class="contactElements">
+                <div id="github">
+                  <button onclick="openGithub()"><i href="github.com/sgkul2000" class="fab fa-github"></i><b>Github</b></button>
+                </div>
+                <div id="mail">
+                  <button onclick="sendMail()"><i class="far fa-envelope"></i><b>Mail</b></button>
+                </div>
+                <div id="linkedin">
+                  <button onclick="openLinkedIn()"><i class="fab fa-linkedin"></i><b>LinkedIn</b></button>
+                </div>
+            </div>
+            <div id="socializeHeading">Wanna socialize?</div>
+            <div class="socialElements">
+              <a href="https://instagram.com/kulkarni.shreesh" class="fab fa-instagram"></a>
+            </div>
+
+
+        </div>
+      </main>
+
+    <script src="../main.js"></script>
+</body>
+</html>
