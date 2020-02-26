@@ -260,11 +260,12 @@ main{
   color: #222;
 }
 .wrapper{
-  margin: 100px auto 20px auto;
+  margin: 100px auto 0 auto;
   backdrop-filter: blur(3px) grayscale(0.5);
   background-color: rgba(230 , 230 , 230 , 0.8);
   text-align: center;
   color: #222;
+  padding: 30px 0 50px 0;
 
 }
 
@@ -307,8 +308,16 @@ main{
    font-family: 'Roboto';
    margin: 20px auto;
 }
+.socialElements{
+  display: inline-flex;
+  align-items: center;
 
-.fab, .far{
+}
+.socialElements a{
+  margin: auto 10px;
+}
+
+.fab, .far, .fas{
   padding: 0.5rem;
   border-radius: 5px;
   font-size: 1.6rem;
@@ -340,12 +349,28 @@ main{
 
 .fa-instagram{
   /* background-color: #3f729b; */
+  font-size: 2rem;
   color: #eee;
   border-radius: 50%;
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  /* box-shadow: 0px 3px 10px rgba(0,0,0,.25); */
 
+}
+.fa-snapchat{
+  font-size: 3rem;
+  border-radius: 50%;
+  padding: 0;
+  color: #FFFC00;
+  background-color: #fff;
+
+}
+.fa-phone{
+  font-size: 2.5rem;
+  border-radius: 50%;
+  background-color: #eee;
+  padding: 0;
+  color: #0069ed;
 }
 
 button{

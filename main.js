@@ -35,3 +35,9 @@ function mySearch(){
 function openGithub(){
   window.open("https://github.com/sgkul2000");
 }
+function sendMail(){
+  window.open("mailto:sgkul2000@gmail.com");
+}
+function openLinkedIn(){
+  window,open("https://www.linkedin.com/in/shreesh-k-46370410a");
+}
