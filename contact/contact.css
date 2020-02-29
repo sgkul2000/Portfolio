@@ -438,8 +438,12 @@ button b{
     #mySearch{
       width: 30%;
     }
-    .fab:hover, .far:hover{
+    .fab:hover, .far:hover, .fas:hover{
       opacity: 0.7;
+    }
+    .wrapper{
+      margin-top: 50px;
+      max-width: 65%;
     }
     
     
