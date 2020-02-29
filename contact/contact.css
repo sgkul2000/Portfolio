@@ -82,9 +82,6 @@ button {
   
   h1{
     font-size: 1.9rem;
-    line-height: 1.4;
-    margin-top: 7px;
-    font-family: 'Roboto', sans-serif;
     
   }
   
@@ -392,6 +389,21 @@ button b{
   font-family: Arial, Helvetica, sans-serif;
   
 }
+#logoImg{
+  float: left;
+  height: 1.9rem;
+  width: 3.0132rem;
+  margin-top: 5px;
+
+}
+#mainBrand{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.4;
+  margin-top: 7px;
+  font-family: 'Roboto', sans-serif;
+}
 
 
 
@@ -420,7 +432,7 @@ button b{
     main{
       text-align: center;
     }
-    h1{
+    #mainBrand{
       float: left;
       line-height: 1;
       margin-left: 10%;
@@ -445,6 +457,10 @@ button b{
       margin-top: 50px;
       max-width: 65%;
     }
+    #logoImg{
+      line-height: 2;
+      margin-top: 0px;
+    } 
     
     
   }
